@@ -14,10 +14,10 @@ const Home = () => {
       <h1>BABYLON 我的3D之旅</h1>
       <div className={styles.dropContainer}>
         {
-          routes.map((item, index) => (
+          routes.map((item, index) => item.path !== '/home' && item.path !== '/' && (
             <div key={index} className={styles.dropBox} onClick={() => handleDrop(item.path)}>
               {item.name}
-              { item.path !== '/home' ? <p>去看看</p> : <p>当前页</p> }
+              <p>去看看</p>
             </div>
           ))
         }
