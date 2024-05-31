@@ -38,6 +38,7 @@ jobs:
         run: npx run build  # 构建项目
       - name: Deploy with serve
         run: npx serve -s build -l 8888
+        
       # - name: Setup Pages
       #   uses: actions/configure-pages@v5
       # - name: Build with Jekyll
