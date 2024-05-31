@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist", // 输出编译后的 JavaScript 文件
+    "noImplicitAny": true, // 启用严格的类型检查
+    "module": "ES2022", // 使用 ES6 模块
+    "target": "es5", // 编译目标为 ES5
+    "jsx": "react", // 支持 JSX
+    "allowSyntheticDefaultImports": true, // 允许默认导入从没有默认导出的模块
+    "esModuleInterop": true, // 启用基于命名空间的模块
+    "sourceMap": true, // 生成 source map 文件
+    "strict": false, // 启用所有严格类型检查选项，js/ts混用设置为false
+    "skipLibCheck": true, // 跳过库的类型定义检查
+    "allowJs": true, // 允许使用js
+    // "checkJs": true, // 检查js文件
+    "noImplicitThis": false, // js/ts 混用时设为false
+    "allowUmdGlobalAccess": true, // 允许访问 UMD 全局变量
+    "baseUrl": ".",
+    "paths": {},
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+    "moduleResolution": "Node"
+  },
+  "include": ["src/**/*", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"], // 包含 src 目录下的所有文件
+  "exclude": ["node_modules", "build"] // 排除 node_modules 和 build 目录
+}
