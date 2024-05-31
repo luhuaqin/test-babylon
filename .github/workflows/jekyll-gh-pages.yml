@@ -35,7 +35,7 @@ jobs:
       - name: Install dependencies
         run: yarn # 安装依赖
       - name: Build project
-        run: npx run build  # 构建项目
+        run: npm run build  # 构建项目
       - name: Deploy with serve
         run: npx serve -s build -l 8888
         
