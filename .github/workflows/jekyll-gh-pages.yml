@@ -33,7 +33,7 @@ jobs:
         with: 
           node-version: '20' # 设置node版本
       - name: Install dependencies
-        run: npm install # 安装依赖
+        run: yarn # 安装依赖
       - name: Build project
         run: npx run build  # 构建项目
       - name: Deploy with serve
