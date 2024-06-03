@@ -2,7 +2,6 @@ const path = require('path');
 
 const CracoLessPlugin = require('craco-less');
 const {loaderByName } =  require('@craco/craco');
-console.log('=====>', path.resolve(__dirname, 'src/router'));
 
 module.exports = {
   webpack: {

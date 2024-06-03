@@ -11,6 +11,7 @@ function FirstTry() {
 
   useEffect(() => {
     const engine = new Engine(canvasRef.current, true);
+    console.log('first');
   
     const scene = createScene(engine, canvasRef.current);
   
